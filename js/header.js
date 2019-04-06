@@ -53,5 +53,5 @@ signup_link.onclick = function() {
   var signInModal = document.getElementById('signin-modal');
   signInModal.style.display = "none";
   signUpModal.style.display = "block";
-
 }
+
