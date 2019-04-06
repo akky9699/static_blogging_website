@@ -1,6 +1,5 @@
 /* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
 the title "ScriBBler" & the sub-heading below "ScriBBLer" */
-
 form button {
     background-color: #4CAF50;
     color: white;
@@ -188,3 +187,4 @@ input[type=password]:focus {
     text-decoration: none;
     color: blue;
 }
+
