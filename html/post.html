@@ -3,19 +3,109 @@
         
         <link href='..\css\post.css' rel='stylesheet' type='text/css'>
         <link href='..\css\header.css' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
+		<link href='css\index.css' rel='stylesheet' type='text/css'>
         <link href='..\css\font.css' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
     <style>        
     </style>     
 </head>
 <body>
-    <div class="header">
-            <button id="signin" class="top-buttons" name="button" onclick="openSignin()">Sign in</button>
-            <button id="signup" class="top-buttons" name="button" onclick="openSignup()">Sign up</button>
-            <a id="pageTitle" class="logo-title">ScriBBler</a>
-            <p class="middleText">Explore,Imagine,Create</p>
+    <div id="main-container-div">
+
+        <div class="header">
+
             <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
-    </div>       
+            <input class="btnSignUp" type="button" id="signup-button" value="Sign Up">
+            <input class="btnSignIn" type="button" id="signin-button" value="Sign In">
+            <a class="pageTitle">ScriBBler</a>
+            <p class="subHeading">Explore, Imagine, Create</p>
+
+        </div>
+           
+        <div class="postButtons">
+
+        	<!-- Insert code for All Posts & Create Post button here -->
+
+        </div>
+    </div>
+
+    <div>
+
+    	<!-- Insert code for Sign In modal here -->
+        <!-- The Modal -->
+        <div id="signin-modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close-signin">&times;</span>
+                    <h2>Welcome Back!</h2>
+                </div>
+                <hr>
+                <div class="modal-body">
+                    <form>
+                        <div class="container">    
+                            <label for="username"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="username" required/>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required/>
+
+                            <button type="submit" class="signin-button">Sign In</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>Not a member? <a href="#" id="signup-link">Sign Up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+        <!-- Insert code for Sign Up modal here -->
+        <!-- The Modal -->
+        <div id="signup-modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close-signup">&times;</span>
+                    <h2>Get Started</h2>
+                </div>
+                <hr>
+                <div class="modal-body">
+                    <form>
+                        <div class="container">
+                            <label for="full_name"><b>Full Name</b></label>
+                            <input type="text" placeholder="Enter Full Name" name="full_name" required/>
+    
+                            <label for="username"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="username" required/>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required/>
+
+                            <label for="psw-confirm"><b>Confirm Password</b></label>
+                            <input type="password" placeholder="Confirm Password" name="psw-confirm" required/>
+
+                            <button type="submit" class="signup-button">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+    	<!-- Insert code for Create Post modal here -->
+
+    </div>
+
+	<!-- Place all Javascript for header in this file -->
+	<script src="js\header.js"></script>
+	<!-- Place all Javascript for rest of the elements in this file -->
+    <script src="js\index.js"></script>      
 
     <div class="blogContent">
         <div id="blogTitle" class="blogTite">
